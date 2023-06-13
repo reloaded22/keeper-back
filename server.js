@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 const { readNotesMongo, createNoteMongo, deleteNoteMongo } = require("./mongo");
 const { readNotesDynamo, createNoteDynamo, deleteNoteDynamo } = require("./dynamo");
 
